@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/dialog.css">
+</head>
+
+<body>
+	
+	<div id="diaog" class="plug_diaog">
+		<div class="plug_diaog-content">
+			<div class="plug_diaog-header">提示</div>
+			<div class="plug_diaog-body">
+				内容
+			</div>
+			
+			<div class="plug_diaog-footer">
+				<button type="button">确定</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/dialog.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    	let dialog = new Dialog('#diaog');
+		dialog.config({
+            title:'新消息'
+        });
+    </script>
+
+</body>
+
+</html>
